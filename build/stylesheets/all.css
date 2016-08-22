@@ -801,7 +801,7 @@ ul, li {
   .button-icon:before {
     height: 1.6em;
     width: 1.6em;
-    background-image: url(https://raw.githubusercontent.com/thoughtbot/empties/master/source/images/placeholder_small.png);
+    background-image: url(../images/placeholder_square_small.svg);
     background-repeat: no-repeat;
     background-size: 1.6em;
     content: "";
