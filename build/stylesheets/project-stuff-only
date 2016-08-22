@@ -1,0 +1,213 @@
+.project-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  margin-top: 2em;
+  font-size: 5em;
+  color: tomato; }
+
+.main-header {
+  color: tomato; }
+
+.er_toc_title {
+  display: none; }
+
+.er_toc_content {
+  padding: 3em 0; }
+  .er_toc_content ul {
+    display: flex;
+    flex-wrap: wrap; }
+  .er_toc_content li {
+    margin-bottom: 1.1em;
+    margin-right: .36em; }
+  .er_toc_content li:nth-child(1) a {
+    background-color: #ff6547;
+    color: white; }
+  .er_toc_content li:nth-child(2) a {
+    background-color: #ff6647;
+    color: white; }
+  .er_toc_content li:nth-child(3) a {
+    background-color: #ff6847;
+    color: white; }
+  .er_toc_content li:nth-child(4) a {
+    background-color: #ff6947;
+    color: white; }
+  .er_toc_content li:nth-child(5) a {
+    background-color: #ff6b47;
+    color: white; }
+  .er_toc_content li:nth-child(6) a {
+    background-color: #ff6c47;
+    color: white; }
+  .er_toc_content li:nth-child(7) a {
+    background-color: #ff6e47;
+    color: white; }
+  .er_toc_content li:nth-child(8) a {
+    background-color: #ff6f47;
+    color: white; }
+  .er_toc_content li:nth-child(9) a {
+    background-color: #ff7147;
+    color: white; }
+  .er_toc_content li:nth-child(10) a {
+    background-color: #ff7247;
+    color: white; }
+  .er_toc_content li:nth-child(11) a {
+    background-color: #ff7447;
+    color: white; }
+  .er_toc_content li:nth-child(12) a {
+    background-color: #ff7547;
+    color: white; }
+  .er_toc_content li:nth-child(13) a {
+    background-color: #ff7747;
+    color: white; }
+  .er_toc_content li:nth-child(14) a {
+    background-color: #ff7847;
+    color: white; }
+  .er_toc_content li:nth-child(15) a {
+    background-color: #ff7a47;
+    color: white; }
+  .er_toc_content li:nth-child(16) a {
+    background-color: #ff7c47;
+    color: white; }
+  .er_toc_content li:nth-child(17) a {
+    background-color: #ff7d47;
+    color: white; }
+  .er_toc_content li:nth-child(18) a {
+    background-color: #ff7f47;
+    color: white; }
+  .er_toc_content li:nth-child(19) a {
+    background-color: #ff8047;
+    color: white; }
+  .er_toc_content li:nth-child(20) a {
+    background-color: #ff8247;
+    color: white; }
+  .er_toc_content li:nth-child(21) a {
+    background-color: #ff8347;
+    color: white; }
+  .er_toc_content li:nth-child(22) a {
+    background-color: #ff8547;
+    color: white; }
+  .er_toc_content li:nth-child(23) a {
+    background-color: #ff8647;
+    color: white; }
+  .er_toc_content li:nth-child(24) a {
+    background-color: #ff8847;
+    color: white; }
+  .er_toc_content li:nth-child(25) a {
+    background-color: #ff8947;
+    color: white; }
+  .er_toc_content li:nth-child(26) a {
+    background-color: #ff8b47;
+    color: white; }
+  .er_toc_content li:nth-child(27) a {
+    background-color: #ff8c47;
+    color: white; }
+  .er_toc_content li:nth-child(28) a {
+    background-color: #ff8e47;
+    color: white; }
+  .er_toc_content li:nth-child(29) a {
+    background-color: #ff8f47;
+    color: white; }
+  .er_toc_content li:nth-child(30) a {
+    background-color: #ff9147;
+    color: white; }
+  .er_toc_content li:nth-child(31) a {
+    background-color: #ff9347;
+    color: white; }
+  .er_toc_content li:nth-child(32) a {
+    background-color: #ff9447;
+    color: white; }
+  .er_toc_content li:nth-child(33) a {
+    background-color: #ff9647;
+    color: white; }
+  .er_toc_content li:nth-child(34) a {
+    background-color: #ff9747;
+    color: white; }
+  .er_toc_content li:nth-child(35) a {
+    background-color: #ff9947;
+    color: white; }
+  .er_toc_content li:nth-child(36) a {
+    background-color: #ff9a47;
+    color: white; }
+  .er_toc_content li:nth-child(37) a {
+    background-color: #ff9c47;
+    color: white; }
+  .er_toc_content li:nth-child(38) a {
+    background-color: #ff9d47;
+    color: white; }
+  .er_toc_content li:nth-child(39) a {
+    background-color: #ff9f47;
+    color: white; }
+  .er_toc_content li:nth-child(40) a {
+    background-color: #ffa047;
+    color: white; }
+  .er_toc_content li:nth-child(41) a {
+    background-color: #ffa247;
+    color: white; }
+  .er_toc_content li:nth-child(42) a {
+    background-color: #ffa347;
+    color: white; }
+  .er_toc_content li:nth-child(43) a {
+    background-color: #ffa547;
+    color: white; }
+  .er_toc_content li:nth-child(44) a {
+    background-color: #ffa647;
+    color: white; }
+  .er_toc_content li:nth-child(45) a {
+    background-color: #ffa847;
+    color: white; }
+  .er_toc_content li:nth-child(46) a {
+    background-color: #ffaa47;
+    color: white; }
+  .er_toc_content li:nth-child(47) a {
+    background-color: #ffab47;
+    color: white; }
+  .er_toc_content li:nth-child(48) a {
+    background-color: #ffad47;
+    color: white; }
+  .er_toc_content li:nth-child(49) a {
+    background-color: #ffae47;
+    color: white; }
+  .er_toc_content li:nth-child(50) a {
+    background-color: #ffb047;
+    color: white; }
+  .er_toc_content li:nth-child(51) a {
+    background-color: #ffb147;
+    color: white; }
+  .er_toc_content li:nth-child(52) a {
+    background-color: #ffb347;
+    color: white; }
+  .er_toc_content li:nth-child(53) a {
+    background-color: #ffb447;
+    color: white; }
+  .er_toc_content li:nth-child(54) a {
+    background-color: #ffb647;
+    color: white; }
+  .er_toc_content li:nth-child(55) a {
+    background-color: #ffb747;
+    color: white; }
+  .er_toc_content li:nth-child(56) a {
+    background-color: #ffb947;
+    color: white; }
+  .er_toc_content li:nth-child(57) a {
+    background-color: #ffba47;
+    color: white; }
+  .er_toc_content li:nth-child(58) a {
+    background-color: #ffbc47;
+    color: white; }
+  .er_toc_content li:nth-child(59) a {
+    background-color: #ffbd47;
+    color: white; }
+  .er_toc_content li:nth-child(60) a {
+    background-color: #ffbf47;
+    color: white; }
+  .er_toc_content li a {
+    padding: 6px 9px;
+    border-radius: 2px; }
+
+.er_toc_top {
+  background-color: tomato;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  margin-left: 1em;
+  vertical-align: middle;
+  font-size: 0.3em; }
