@@ -1,0 +1,24 @@
+.landing-sidebar {
+
+	.navigation {
+		position: fixed;
+		width: 100%;
+	}
+
+	.container {
+		padding-top: 7em;
+
+		.main {
+			max-width: calc(75% - 1em);
+			float: left;
+			margin-right: 1em;
+		}
+
+		.sidebar {
+			width: 25%;
+			padding: $padding-inner;
+			float: right;
+			background: $light-color;
+		}
+	}
+}
