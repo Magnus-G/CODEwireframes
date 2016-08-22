@@ -1,0 +1,30 @@
+.accordion {  
+  background-color: $component-color;
+  border: $border;
+  list-style: none;
+
+  > li > a {
+    font-weight: normal;
+    display: inline-block;
+    border-top: $border;
+    padding: $padding-inner;
+    width: 100%;
+  }
+
+  li:first-of-type a {
+    border-top: 0;
+  }
+
+  ul.submenu {
+    display: none;
+    padding: $padding-inner;
+  }
+
+  .is-expanded {
+    > a {
+      color: red;
+    }
+
+    display: block;
+  }
+}

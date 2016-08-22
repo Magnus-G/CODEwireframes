@@ -1,0 +1,70 @@
+.button-group {
+  $button-group-background: $body-color;
+  $button-group-background-checked: $mid-light-color;
+
+  display: inline-block;
+  width: 100%;
+
+  input {
+    display: none;
+  }
+
+  label {
+    margin-bottom: 0;
+
+    @media (min-width: $large-screen) {
+      float: left;
+    }
+
+    .button-group-item {
+      background: $button-group-background;
+      border-left: $border;
+      border-right: $border;
+      border-bottom: $border;
+      cursor: pointer;
+      display: inline-block;
+      font-weight: normal;
+      padding: $padding-inner;
+      width: 100%;
+
+      @media (min-width: $large-screen) {
+        border: $border;
+        border-left: 0;
+        width: auto;
+      }
+
+      &:focus,
+      &:hover {
+        background-color: darken($button-group-background, 3%);
+      }
+    }
+
+    &:first-child .button-group-item {
+      border-top: $border;
+
+      @media (min-width: $large-screen) {
+        border-left: $border;
+        border-top-right-radius: 0;
+      }
+    }
+
+    &:last-child .button-group-item {
+      border-bottom: $border;
+
+      @media (min-width: $large-screen) {
+        border-bottom-left-radius: 0;
+        border-right: $border;
+      }
+    }
+
+    input:checked + .button-group-item {
+      background: $button-group-background-checked;
+    }
+  }
+}
+
+.button-group-container {
+  border: $border;
+  width: 100%;
+  height: 12em;
+}

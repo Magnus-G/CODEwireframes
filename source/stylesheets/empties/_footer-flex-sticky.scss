@@ -1,0 +1,89 @@
+html,
+body {
+  height: 100%;
+}
+
+.whole-page-for-sticky-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.footer-flex {
+  background: $component-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  
+  .footer-flex-primary {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-flex-logo {
+    margin-right: 1em;
+
+    img {
+      height: 2.2em;
+      vertical-align: bottom;
+    } 
+  }
+
+  .footer-flex-primary-menu {
+    margin: 0;
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      line-height: 1.5em;
+      padding-right: 1em;
+
+      @media (min-width: $large-screen) {
+        display: inline;
+        text-align: left;
+      }
+    }
+  }
+
+  .footer-flex-secondary {
+    @media (min-width: $large-screen) {
+      float: right;
+    }
+
+    li {
+      display: inline;
+    }
+
+    ul.footer-flex-social {
+      margin: 1em 0 0 0;
+
+      @media (min-width: $large-screen) {
+        float: right;
+        margin-top: 0;
+      }
+
+      li {
+        float: left;
+        font-size: 1em;
+        line-height: 0;
+        margin: 0;
+        padding-right: 0.7em;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+      img {
+        height: 1.6em;
+        padding: 1px;
+
+        &:focus,
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

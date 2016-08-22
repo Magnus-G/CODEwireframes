@@ -1,0 +1,19 @@
+.intro-text {
+  background-color: $component-color;
+  padding: $padding-inner*2 0 $padding-inner*3;
+  text-align: center;
+
+  h2 {
+    margin-bottom: $margin-bottom;
+  }
+
+  p {
+    max-width: $max-width / 2;
+    margin: 0 auto $margin-bottom*2;
+  }
+
+  a {
+    @extend .button-primary;
+    margin: auto;
+  }
+}

@@ -1,0 +1,13 @@
+#drop-area {
+  width: 350px;
+  height: 2em + ($padding-inner * 2);
+  padding: $padding-inner;
+  border: $border;
+  margin-bottom: $margin-bottom;
+
+  img {
+    height: 2em;
+    width: 2em;
+    margin-right: $padding-inner / 2;
+  }
+}

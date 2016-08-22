@@ -1,0 +1,70 @@
+.price-slider-wrap {
+  background-color: $component-color;
+  border: $border;
+  margin-bottom: $margin-bottom;
+  padding: $padding-inner;
+}
+
+.price-slider {
+  margin-bottom: $margin-bottom;
+}
+
+.ui-slider {
+  position: relative;
+}
+
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1.2em;
+  height: 1.2em;
+  cursor: pointer;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+.ui-slider .ui-slider-range {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  border: 0;
+  background-position: 0 0;
+}
+
+.ui-slider-horizontal {
+  height: .8em;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -.3em;
+  margin-left: -.6em;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+  top: 0;
+  height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+  left: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+  right: 0;
+}
+
+.ui-widget-content {
+  border: $border;
+  background: $component-color;
+}
+
+.ui-slider-range {
+  border: $border;
+  background: $body-color;
+}
+
+.ui-slider-handle {
+  background: $mid-light-color;
+  border-radius: 50%;
+}
+

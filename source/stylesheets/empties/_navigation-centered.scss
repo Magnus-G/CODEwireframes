@@ -1,0 +1,112 @@
+.navigation-centered {
+  $large-screen: 50em !default;
+  $centered-navigation-height: 60px;
+  $centered-navigation-logo-height: 2em;
+
+  background-color: $component-color;
+  padding: $padding-inner;
+  width: 100%;
+
+  // Mobile view
+  .mobile-logo {
+    display: inline;
+    float: left;
+    
+    @media (min-width: $large-screen) {
+      display: none;
+    }
+
+    img {
+      height: $centered-navigation-logo-height;
+      vertical-align: bottom;
+    }
+  }
+
+  .navigation-centered-mobile-menu {
+    float: right;
+    padding-top: 0.5em;
+
+    @media (min-width: $large-screen) {
+      display: none;
+    }
+  }
+
+  // Nav menu
+  .navigation-centered-wrapper {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    &::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+
+    &:before, &:after {
+      content: " ";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+  }
+
+  ul.navigation-centered-menu {
+    clear: both;
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+
+    &.show {
+      display: block;
+    }
+
+    @media (min-width: $large-screen) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  // Nav items
+  ul li.nav-link {
+    display: block;
+    text-align: right;
+    width: 100%;
+
+    a {
+      display: inline-block;
+    }
+
+    &:last-child a {
+      padding-right: 0;
+    }
+
+    @media (min-width: $large-screen) {
+      display: inline;
+
+      a {
+        padding-right: 1em;
+      }
+    }
+  }
+
+  // Centered logo
+  li.logo.nav-link {
+    display: none;
+    line-height: 0;
+
+    @media (min-width: $large-screen) {
+      display: inline;
+    }
+  }
+
+  .logo img {
+    margin-bottom: -$centered-navigation-logo-height / 3;
+    height: $centered-navigation-logo-height;
+  }
+}

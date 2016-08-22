@@ -1,0 +1,44 @@
+<div class="aside-menu">
+  <aside>
+    <ul class="accordion">
+      <li>
+        <a href="javascript:void(0)" class="js-accordion-trigger aside-menu-item" rel="aside1">Accordion Item</a>
+        <ul class="submenu">
+          <li>
+            <a href="javascript:void(0)">Sub Item 1</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Sub Item 2</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0)" class="js-accordion-trigger aside-menu-item" rel="aside2">Another Item</a>
+        <ul class="submenu">
+          <li>
+            <a href="javascript:void(0)">Sub Item 1</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">Sub Item 2</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+  <div class="aside-menu-contents">
+    <div id="aside1" class="aside-menu-content is-active">
+      <%= partial "cards" %>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div id="aside2" class="aside-menu-content">
+      <h2>Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, nemo, tempora accusantium debitis ab ratione maiores dolorum modi aliquam, quam error ipsam harum? Repudiandae dolor consequatur quibusdam autem facere!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+    </div>
+    <div id="aside3" class="aside-menu-content">
+      <h2>Other Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius saepe, nemo, tempora accusantium debitis ab ratione maiores dolorum modi aliquam, quam error ipsam harum? Repudiandae dolor consequatur quibusdam autem facere!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+    </div>
+  </div>
+</div>

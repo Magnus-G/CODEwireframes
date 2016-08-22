@@ -1,0 +1,40 @@
+.icon-menu {
+  background-color: $component-color;
+  border: $border;
+  display: flex;
+
+  ul {
+    padding: $padding-inner;
+    border-right: $border;
+  }
+
+  li {
+    margin-bottom: $margin-bottom;
+  }
+
+  a {
+    $icon-text-distance: 1.5em;
+    position: relative;
+    margin-left: $icon-text-distance;
+
+    &.icon::before {
+      background-image: url(/images/placeholder_square_small.svg);
+      background-size: 15px;
+      content:"";
+      left: -$icon-text-distance;
+      display: inline-block;
+      width: 15px; 
+      height: 15px;
+      position: absolute;
+    }
+  }
+
+  .icon-menu-content {
+    padding: $padding-inner;
+    display: none;
+  }
+
+  .is-active {
+    display: block;
+  }
+}

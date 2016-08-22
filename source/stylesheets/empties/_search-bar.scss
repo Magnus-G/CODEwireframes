@@ -1,0 +1,43 @@
+.search-bar {
+  width: 100%;
+
+  form {  
+    background-color: $component-color;
+    position: relative;
+  }
+
+  input {
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    left: auto;
+    right: 0;
+    padding: 3px 10px;
+    border-radius: 0;
+    
+    .ui-button-text {
+      padding: 0;
+      line-height: 0;
+    }
+  }
+  
+  img {
+    height: 12px;
+    opacity: 0.7;
+  }
+}
+
+.autocomplete-suggestions { 
+  border: $border; 
+  background: $component-color; 
+  overflow: auto; 
+}

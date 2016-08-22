@@ -1,0 +1,31 @@
+.vertical-split {
+  display: block;
+  background-color: $component-color;
+
+  @media (min-width: $large-screen) {
+    display: flex;
+  }
+
+  .vertical-split-image {
+    background: url(/images/placeholder_square.svg);
+    background-size: cover;
+    background-position: center center;
+    height: 12em;
+    width: 100%;
+
+    @media (min-width: $large-screen) {
+      float: left;
+      height: 100%;
+      width: 35%;
+    }
+  }
+
+  .vertical-split-content {
+    padding: $padding-inner * 5;
+
+    @media (min-width: $large-screen) {
+      float: right;
+      width: 65%;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.checkout-steps {
+  $checkout-step-height: 4em;
+  position: relative;
+  display: flex;
+  margin-bottom: 3em;
+  justify-content: space-between;
+
+  .checkout-line {
+    position: absolute;
+    height: 1px;
+    top: $checkout-step-height/2;
+    width: 100%;
+    background-color: silver;
+  }
+
+  .checkout-step {
+    height: $checkout-step-height;
+    display: flex;
+    flex-direction: column;
+
+    p.checkout-number {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      background-color: $body-color;
+      border: $border;
+      margin: 0;
+      flex-shrink: 0;
+      height: 4em;
+      width: 4em;
+      border-radius: 5em;
+      z-index: 9;
+      text-align: center;
+      line-height: 0;
+    }
+
+    p.checkout-step-name {
+      text-align: center;
+    }
+  }
+}

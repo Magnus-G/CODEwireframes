@@ -1,0 +1,72 @@
+.vertical-tabs-container {
+  $vertical-tabs-height: 20em;
+  background-color: $component-color;
+  border: $border;
+
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  .vertical-tabs {
+    display: none;
+
+    @media (min-width: $large-screen) {
+      display: inline;
+      float: left;
+      height: $vertical-tabs-height;
+      width: 20%;
+    }
+  }
+
+  .vertical-tab {
+    border-bottom: $border;
+    padding: $padding-inner;
+
+    @media (min-width: $large-screen) {
+      display: block;
+
+      &.is-active {
+        color: #ff0000;
+      }
+    }
+  }
+
+  .vertical-tab-content-container {
+    display: block;
+
+    @media (min-width: $large-screen) {
+      width: 80%;
+      border-left: $border;
+      height: $vertical-tabs-height;
+      display: inline-block;
+      padding: $padding-inner;
+    }
+  }
+
+  .vertical-tab-content {
+    padding: $padding-inner;
+
+    @media (min-width: $large-screen) {
+      display: none;
+    }
+  }
+
+  .vertical-tab-accordion-heading {
+    cursor: pointer;
+    padding: $padding-inner;
+    border-top: $border;
+    display: block;
+
+    &:first-of-type {
+      border-top: 0;
+    }
+
+    @media (min-width: $large-screen) {
+      display: none;
+    }
+  }
+}
+
+// Based on code by Jett Miller jettmiller.net

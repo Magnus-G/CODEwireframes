@@ -1,0 +1,71 @@
+.tables {
+  $table-background: $light-color;
+  $table-header-background: lighten($table-background, 10%);
+  $table-hover-background: darken($table-background, 5%);
+  $table-stripe-background: darken($table-background, 2%);
+  $table-stripe-background-hover: darken($table-stripe-background, 5%);
+
+  border: $border;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+
+  tbody {
+    background-color: $table-background;
+
+    tr:hover > td, tr:hover > th {
+      background-color: $table-hover-background;
+    }
+
+    tr:nth-child(even) {
+      background-color: $table-stripe-background;
+      
+      &:hover > td {
+        background-color: $table-stripe-background-hover;
+      }
+    }
+  }
+
+  thead {
+    th {
+      background-color: $table-header-background;
+      border-bottom: 0;
+      border-left: $border;
+      text-align: left;
+      padding: $padding-inner/3 $padding-inner;
+
+      &:first-child {
+        border-left: 0;
+      }
+    }
+  }
+
+  .table-image {
+    width: 5%;
+  }
+
+  img {
+    max-height: 2em;
+  }
+
+  td {
+    border-bottom: 0;
+    border-left: $border;
+    border-top: $border;
+    padding: $padding-inner/3 $padding-inner;
+
+    &:first-child {
+      border-left: 0;
+    }
+  }
+
+  td.table-controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    button {
+      @extend .small-button;
+    }
+  }
+}

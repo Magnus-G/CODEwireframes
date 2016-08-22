@@ -1,0 +1,19 @@
+.button-icon {
+  @extend .button-primary;
+  $icon-size: 1.6em;
+  cursor: pointer;
+  padding: 1em;
+  width: 100%;
+
+  &:before {
+    height: $icon-size;
+    width: $icon-size;
+    background-image: url(https://raw.githubusercontent.com/thoughtbot/empties/master/source/images/placeholder_small.png);
+    background-repeat: no-repeat;
+    background-size: $icon-size;
+    content: "";
+    display: inline-block;
+    margin-right: 1em;
+    vertical-align: middle;
+  }
+}

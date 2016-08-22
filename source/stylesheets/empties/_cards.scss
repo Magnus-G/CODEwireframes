@@ -1,0 +1,29 @@
+.cards {
+  $grid-gutter: 1em;
+  justify-content: space-between;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 (- $grid-gutter);
+
+  .cards-box-wrap {
+    flex-basis: 20rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+    overflow: hidden;
+    padding: 0 $grid-gutter ($grid-gutter * 2);
+  }
+
+  .card {
+    flex-basis: 20em;
+    flex-grow: 1;
+  }
+  
+  .card-image {
+    height: auto;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+}

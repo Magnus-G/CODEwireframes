@@ -1,0 +1,145 @@
+@import "normalize";
+@import "project-stuff-only";
+
+$white: white;
+$light-color: whitesmoke;
+$mid-light-color: darken(whitesmoke, 10);
+$dark-color: black;
+
+$body-color: $white;
+$component-color: $light-color;
+$primary-color: darken($light-color, 3);
+$font-color: $dark-color;
+$hover-color: lighten($component-color, 2);
+$border-color: silver;
+
+$max-width: 68em;
+$large-screen: 50em;
+$border: 1px solid $border-color;
+
+$font-size: 1em;
+$padding-inner: 1em;
+$margin-bottom: 1em;
+
+body {
+  background-color: $body-color; 
+  color: $font-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partial {
+  margin-bottom: 7em;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.main-header {
+  margin-bottom: 1em;
+  padding-top: 1em;
+  border-top: 1px dashed silver;
+}
+
+p {
+  font-size: $font-size;
+  line-height: 1.4;
+  margin: 0 0 $margin-bottom;
+}
+
+.small-text {
+  font-size: $font-size * 0.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.button-primary {
+  background-color: $primary-color;
+  display: inline-block;
+  cursor: pointer;
+  padding: $padding-inner $padding-inner*2;
+  border: $border;
+  color: $font-color;
+  box-shadow: 0 2px 0 $mid-light-color;
+  transition: all 0.2s ease-in;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: lighten($primary-color, 2);
+  }
+
+  &.small-button {
+    padding: $padding-inner/3 $padding-inner*2;
+  }
+}
+
+button {
+  @extend .button-primary;
+}
+
+@import "empties/aside-menu";
+@import "empties/accordion";
+@import "empties/accordion-tabs";
+@import "empties/bullet-points";
+@import "empties/button-group";
+@import "empties/button-icon";
+@import "empties/breadcrumbs";
+@import "empties/cards";
+@import "empties/checkout-steps";
+@import "empties/comment";
+@import "empties/drag-and-drop";
+@import "empties/dashboard-item";
+@import "empties/dropdown";
+@import "empties/expander";
+@import "empties/font-face";
+@import "empties/footer";
+@import "empties/footer-flex-sticky";
+@import "empties/grid";
+@import "empties/hero";
+@import "empties/hover-map";
+@import "empties/hover-menu";
+@import "empties/icon-menu";
+@import "empties/intro-text";
+@import "empties/login";
+@import "empties/logo-section";
+@import "empties/login-stacked";
+@import "empties/modal";
+@import "empties/navigation";
+@import "empties/navigation-centered";
+@import "empties/pagination";
+@import "empties/price-slider";
+@import "empties/product-detail-view";
+@import "empties/search-bar";
+@import "empties/switch";
+@import "empties/tables";
+@import "empties/tooltip";
+@import "empties/tooltip-map";
+@import "empties/vertical-split";
+@import "empties/vertical-tabs";
+@import "empties/video";
+@import "empties/scroll-on-page";
+@import "empties/spinner";
+@import "empties/sliding-panel";
+
+@import "empties/layouts";
+@import "empties/side-bar-layout";
+
+

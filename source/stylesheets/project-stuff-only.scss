@@ -1,0 +1,55 @@
+$project-primary-color: tomato;
+
+.project-title {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  margin-top: 2em;
+  font-size: 5em;
+  color: $project-primary-color;
+}
+
+.main-header {
+  color: $project-primary-color;
+}
+
+.er_toc_title {
+  display: none;
+}
+
+.er_toc_content {
+  padding: 3em 0;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    margin-bottom: 1.1em;
+    margin-right: .36em;
+  }
+
+  @for $i from 1 through 60 {
+    li:nth-child(#{$i}) {
+      a {
+        background-color: adjust-hue(tomato, ($i / 2));
+        color: white;
+      }
+    }
+  }
+
+  li a {
+    padding: 6px 9px;
+    border-radius: 2px;
+  }
+}
+
+.er_toc_top {
+  background-color: $project-primary-color;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  margin-left: 1em;
+  vertical-align: middle; 
+  font-size: 0.3em;
+}

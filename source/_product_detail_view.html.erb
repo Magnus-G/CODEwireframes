@@ -1,0 +1,60 @@
+<div class="product-detail-view">
+  <div class="product-detail-upper">
+    <div class="product">
+      <div class="product-large-container">
+        <img id="product1" src="/images/placeholder_square.svg" alt="" class="product-large is-active">
+        <img id="product2" src="/images/placeholder_square_red.svg" alt="" class="product-large">
+        <img id="product3" src="/images/placeholder_square_green.svg" alt="" class="product-large">
+      </div>
+      <ul class="product-thumbs">
+        <li>
+          <a href="" class="product-thumb" rel="product1">
+            <img src="/images/placeholder_square.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="" class="product-thumb" rel="product2">
+            <img src="/images/placeholder_square_red.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="" class="product-thumb" rel="product3">
+            <img src="/images/placeholder_square_green.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="product-detail">
+      <p class="category">Category</p>
+      <h2>Product Name</h2>
+      <h3>Price</h3>
+      <p>Short text on what this is</p>
+      <%= partial "expander" %>
+      <div class="customizer">
+        <p class="customizer-title">Customizer title</p>
+        <ul class="customizer-items">
+          <li>
+            <%= partial "tooltip" %>
+          </li>
+          <li>
+            <%= partial "tooltip" %>
+          </li>
+          <li>
+            <%= partial "tooltip" %>
+          </li>
+        </ul>
+      </div>
+      <input type="text" value="1">
+      <input type="submit" class="button-primary" value="Add to cart">
+    </div>
+
+  </div>
+
+  <div class="related-products">
+    <h3>Related Products</h3>
+      <img src="/images/placeholder_square.svg" alt="">
+      <img src="/images/placeholder_square.svg" alt="">
+      <img src="/images/placeholder_square.svg" alt="">
+  </div>
+</div>
